@@ -1,0 +1,75 @@
+<div class="draft-container">  
+  <div class="drafts-sections">
+    <div class="drafts-title">Update Transaction Details</div>
+    <hr>  
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <mat-card>
+          <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationTooltip03">Transaction Type</label>
+                <select class="form-control" id="sel1">
+                    <option>All</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+              </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationTooltip04">Status</label>
+                  <select class="form-control" id="sel1">
+                      <option>All</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip04">Period</label>
+                    
+                    <div class="input-group">
+                        <select class="form-control" id="sel1">
+                            <option>Aug 2018</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                        <span class="input-group-addon">to</span>
+                        <select class="form-control" id="sel1">
+                            <option>Oct 2018</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                    </div>
+                  </div>
+                  
+          </div>
+         
+          <div class="form-row">
+            
+               
+                <div class="col-md-12 mb-3 btn-block pull-right" >
+                    <button type="button" class="btn custom-btn nxt-btn" (click)="showTransactionDetails($event)">Search</button>
+                </div>
+            </div>
+      </mat-card>
+    </div>
+  </div>
+  
+
+</div>
+
+<div class="enquireTransactionList" *ngIf="showTransaction">
+    <label>Showing Results - </label><span> (03/08/2018 to 10/08/2018)</span> 
+<ag-grid-angular 
+    style="width: 100%;
+    height: 250px;" 
+    class="ag-theme-material"
+    [rowData]="rowData" 
+    [columnDefs]="columnDefs"
+    >
+</ag-grid-angular>
+</div>
+</div>
+

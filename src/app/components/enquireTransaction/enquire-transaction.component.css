@@ -1,0 +1,337 @@
+.drafts-title {
+  font-family: Arial;
+  font-style: normal;
+
+  font-size: 28px;
+  color: #4f8208;
+}
+
+.drafts-sections {
+  margin-top: 7px;
+}
+
+.steps-summary {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.dot {
+  height: 31px;
+  width: 31px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 27px;
+  text-align: center;
+  border-style: solid;
+  border-color: #4f8208;
+  border-width: 2px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.steps {
+  margin: 25px 10px 25px 50px;
+  float: left;
+  text-align: center;
+  color: #737373;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.steps:first-of-type {
+  margin: 25px 10px 25px 250px;
+  text-align: center;
+  color: #4f8208;
+}
+
+.dot.active-dot {
+  border-color: #737373;
+}
+
+.steps .step-text {
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.monthSelect {
+  margin: 5px 10px 10px 2px;
+  float: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.newSubmissionSummary {
+  background-color: rgba(36, 99, 153, 1);
+  font-family: Arial;
+  font-style: normal;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 0px;
+  padding: 8px;
+}
+
+.monthSubmissionSummary {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 0px;
+  color: rgba(70, 70, 66, 1);
+  padding: 10px;
+}
+
+.submissionSummary {
+  margin: 5px 10px 10px 0px;
+}
+
+.summaryDetails {
+  float: left;
+  margin-right: 8px;
+}
+
+.submission-button-cancel {
+  float: left;
+}
+
+.submission-button-others {
+  float: right;
+}
+
+.submission-button {
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(115, 115, 115, 1);
+  width: 100px;
+  height: 40px;
+  border-radius: 0px;
+}
+
+.submission-button-header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.submission-button.save {
+  color: rgba(70, 70, 66, 1);
+  background-color: rgba(210, 210, 210, 1);
+  margin-right: 10px;
+}
+
+.submission-button.next {
+  background-color: rgba(36, 99, 153, 1);
+  opacity: 0.2;
+}
+
+.enquireTransactionList {
+  margin-top: 32px;
+}
+
+select {
+  border-style: solid;
+  border-color: rgba(210, 210, 210, 1);
+  border-width: 2px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(115, 115, 115, 1);
+  margin-top: 2px;
+}
+
+.summaryDownload {
+  font-weight: normal;
+  margin-left: 19px;
+  color: rgba(0, 112, 192, 1);
+}
+
+.control-label:after {
+  content: "*";
+  color: red;
+}
+
+.custom-btn {
+  float: right;
+  max-width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: auto !important;
+  margin-top: 32px;
+  color: white;
+  font-family: Arial;
+  font-style: normal;
+}
+
+.back-btn {
+  background-color: black;
+}
+
+.nxt-btn {
+  background-color: rgb(188, 190, 185);
+  color: #000;
+}
+
+h3 {
+  margin-top: 15px !important;
+  margin-bottom: 10px !important;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial;
+}
+
+.btn {
+  border-radius: 0%;
+}
+
+.input-group-text {
+  border-radius: 0%;
+}
+
+.form-label,
+label {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+.form-control-static {
+  font-size: 16px;
+  font-family: Arial;
+}
+
+a {
+  text-decoration: underline;
+  color: #0070c0;
+}
+
+.mat-card {
+  background: #ecebeb;
+}
+
+.input-group-addon {
+  margin: 10px;
+  font-family: Arial;
+  font-style: normal;
+}
+
+hr {
+  margin-top: inherit;
+}
+
+.control-label {
+  font-size: 12px;
+}
+.link {
+  color: #0083f3;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.label-data {
+  margin: 5px 0;
+}
+/* Dialog css starts */
+.dia-head {
+  font-size: 24px;
+  color: #4f8208;
+  margin-bottom: 0;
+}
+.dia-head + .tag {
+  font-size: 14px;
+  font-weight: bold;
+}
+.body .label-data label,
+.body .label-data span {
+  font-size: 14px;
+}
+.body h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+}
+
+td,
+th {
+  border: 1px solid #fff;
+  text-align: left;
+  padding: 8px;
+}
+.footer {
+  font-weight: bold;
+}
+.btn-info {
+  border-radius: 50%;
+  background: #888787;
+  padding: 2px 5px;
+  font-size: 12px;
+  position: relative;
+  bottom: 1px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.accordion {
+  width: 100%;
+  border-left: 2px solid green;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.18);
+  margin-bottom: 5px;
+}
+.accordion h3 {
+  margin-top: 10px !important;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.btn-icon {
+  font-size: 30px;
+  font-weight: bolder;
+  height: 39px;
+  padding-right: 3px;
+  cursor: pointer;
+}
+.btn-icon i{
+  position: relative;
+  bottom: 7px;
+  padding-right: 5px;
+}
+.tableStyle {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.tableStyle .footer td {
+  position: sticky;
+  bottom: 0;
+  background: #bebebefc;
+}
+.tableStyle .t-head th {
+  position: sticky;
+  top: 0;
+  background: #bebebefc;
+}
+/* Dialog css ends */
+
+.w-100 {
+  width: 100% !important;
+}
+select, input{
+  margin-top: 0px !important;
+}
+.bg_th {
+  background: #58575766;
+}
+.pad-5{
+  padding: 5px;
+}
