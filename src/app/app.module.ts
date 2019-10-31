@@ -26,6 +26,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FilterPipeCustom } from './components/Pipes/filterData.pipe';
 import { UpdateTransStatusComponent, updateTransactionPop } from './components/update-trans-status/update-trans-status';
+import { ManageParameterComponent } from './components/manage-parameter/manage-parameter.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { UpdateTransStatusComponent, updateTransactionPop } from './components/u
     FilterPipeCustom,
     detailedPop,
     UpdateTransStatusComponent,
-    updateTransactionPop
+    updateTransactionPop,
+    ManageParameterComponent
   ],
   imports: [
     FormsModule,

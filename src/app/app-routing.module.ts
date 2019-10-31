@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { EnquireTransactionComponent } from './components/enquireTransaction/enquire-transaction.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { UpdateTransStatusComponent } from './components/update-trans-status/update-trans-status';
+import { ManageParameterComponent } from './components/manage-parameter/manage-parameter.component';
 
 const routes: Routes = [{
   path: '',
@@ -19,7 +20,12 @@ const routes: Routes = [{
 {
   path: 'dashboard',
   component: DashboardComponent
+},
+{
+  path: 'manageParameter',
+  component: ManageParameterComponent
 }
+
 ];
 
 @NgModule({
