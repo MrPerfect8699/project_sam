@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {} from '@angular/material/radio';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +18,8 @@ import {
   MatDatepickerModule,
   MatNativeDateModule,
   MatFormFieldModule,
-  MatInputModule 
+  MatInputModule,
+  MatRadioModule
 } from '@angular/material';
 
 import { AgGridModule } from 'ag-grid-angular';
@@ -27,6 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FilterPipeCustom } from './components/Pipes/filterData.pipe';
 import { UpdateTransStatusComponent, updateTransactionPop } from './components/update-trans-status/update-trans-status';
 import { ManageParameterComponent } from './components/manage-parameter/manage-parameter.component';
+import { AuditTrailComponent } from './components/audit-trail/audit-trail.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,8 @@ import { ManageParameterComponent } from './components/manage-parameter/manage-p
     detailedPop,
     UpdateTransStatusComponent,
     updateTransactionPop,
-    ManageParameterComponent
+    ManageParameterComponent,
+    AuditTrailComponent,
   ],
   imports: [
     FormsModule,
@@ -51,6 +55,8 @@ import { ManageParameterComponent } from './components/manage-parameter/manage-p
     MatIconModule,
     MatListModule,
     MatCardModule,
+    MatRadioModule,
+
     // FilterPipeModule,
     Ng2SearchPipeModule,
     MatDatepickerModule,

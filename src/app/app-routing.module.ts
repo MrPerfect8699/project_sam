@@ -4,6 +4,7 @@ import { EnquireTransactionComponent } from './components/enquireTransaction/enq
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { UpdateTransStatusComponent } from './components/update-trans-status/update-trans-status';
 import { ManageParameterComponent } from './components/manage-parameter/manage-parameter.component';
+import { AuditTrailComponent } from './components/audit-trail/audit-trail.component';
 
 const routes: Routes = [{
   path: '',
@@ -24,6 +25,10 @@ const routes: Routes = [{
 {
   path: 'manageParameter',
   component: ManageParameterComponent
+},
+{
+  path: 'auditTrail',
+  component: AuditTrailComponent
 }
 
 ];

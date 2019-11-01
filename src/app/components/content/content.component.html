@@ -54,7 +54,7 @@
                         [ngClass]="rla.isActive ? 'active' : ''">Enquire Transaction Records</a>
                     <a routerLink="updateStatus" routerLinkActive="active">Update Transaction Status</a>
                     <a href="#">View CAYE Reports</a>
-                    <a href="#">View Audit Trial</a>
+                    <a href="#" routerLink="auditTrail" routerLinkActive="active">View Audit Trial</a>
                     <!-- <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
                 <a href="#">Link 4</a> -->
@@ -70,8 +70,9 @@
                     </div>
 
                     <!-- <i class="fa fa-bell-o" style="font-size: 20px; float: left;">
-            </i><span class="badge badge-danger">2</span> --> <span style="padding-left: 17px;"> Your transaction ID CAYEADDCSN12335 has been refunded by
-                    JASIMAH</span>
+            </i><span class="badge badge-danger">2</span> --> <span style="padding-left: 17px;"> Your transaction ID
+                        CAYEADDCSN12335 has been refunded by
+                        JASIMAH</span>
                 </div>
                 <hr>
                 <router-outlet></router-outlet>

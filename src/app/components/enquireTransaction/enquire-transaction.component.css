@@ -258,22 +258,6 @@ hr {
   font-weight: bold;
   margin-top: 1rem;
 }
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 14px;
-}
-
-td,
-th {
-  border: 1px solid #fff;
-  text-align: left;
-  padding: 8px;
-}
-.footer {
-  font-weight: bold;
-}
 .btn-info {
   border-radius: 50%;
   background: #888787;
@@ -307,20 +291,7 @@ th {
   bottom: 7px;
   padding-right: 5px;
 }
-.tableStyle {
-  max-height: 300px;
-  overflow-y: scroll;
-}
-.tableStyle .footer td {
-  position: sticky;
-  bottom: 0;
-  background: #bebebefc;
-}
-.tableStyle .t-head th {
-  position: sticky;
-  top: 0;
-  background: #bebebefc;
-}
+
 /* Dialog css ends */
 
 .w-100 {

@@ -315,16 +315,16 @@ th {
   cursor: pointer;
 }
 
-.tableStyle {
+.sticky-table {
   max-height: 300px;
   overflow-y: scroll;
 }
-.tableStyle .footer td {
+.sticky-table .footer td {
   position: sticky;
   bottom: 0;
   background: #bebebefc;
 }
-.tableStyle .t-head th {
+.sticky-table .t-head th {
   position: sticky;
   top: 0;
   background: #bebebefc;

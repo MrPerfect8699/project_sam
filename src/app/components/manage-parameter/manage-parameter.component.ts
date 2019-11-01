@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./manage-parameter.component.css']
 })
 export class ManageParameterComponent implements OnInit {
-
+  transType:any = 0
+  nextSbt = false;
   constructor() { }
 
   ngOnInit() {

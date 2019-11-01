@@ -70,7 +70,7 @@ export class UpdateTransStatusComponent implements OnInit {
       if(result)
       {
         this.CoyyPple.forEach(element => {
-          if(transNo){
+          if(transNo == this.tranid){
             debugger;
             element.status = result.statusOption;
             element.reason = result.reasonText;

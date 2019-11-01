@@ -1,3 +1,88 @@
-<p>
-  manage-parameter works!
-</p>
+<div class="draft-container">
+  <div class="drafts-sections">
+    <div class="drafts-title">Enquire Transaction Details</div>
+    <span class="tag">DDA Diduction Cut-off Date</span>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" *ngIf="!nextSbt">
+        <p class="col-12 float-left no_pad p-txt">The existing Cut-off date for DDA deduction is on the <b>14th</b> of
+          the following month
+          <i class="w-100 float-left">(Last updated on 12 Jun 2019)</i> </p>
+        <div class="col-md-2 mb-3 no_pad mt-3 float-left">
+          <label for="trnsType">New DDA Deduction</label>
+          <select class="form-control" id="trnsType" [(ngModel)]="transType" [value]="0">
+            <option value="0" selected>Select Month</option>
+            <option>Option 1</option>
+          </select>
+        </div>
+        <p class="col-12 float-left note"><b>Note: </b>For months that do not have 31st, the cut-off will be
+          defaulted to the last day of the month.</p>
+
+        <div class="col-12 no_pad float-left label-data font-14 mt-3">
+          <label for="reas" class="w-100 mb-0">Remarks</label>
+          <textarea name="reason" id="reas" cols="10" rows="4" class="form-control float-left w-100"
+            placeholder="Enter remarks for change here" [(ngModel)]="reason"></textarea>
+        </div>
+
+        <div class="col-12 no_pad float-left label-data font-14 mt-3">
+          <label for="IntendedDate" class="w-100 mb-0 ">Intended Publish Date</label>
+          <div class="float-left mt-2">
+            <mat-radio-group aria-label="Select an option" class="mt-1" id="IntendedDate">
+              <mat-radio-button value="1">Immediage</mat-radio-button><br />
+              <mat-radio-button value="2">Select Date</mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 no_pad mt-3 float-left">
+          <label for="trnsType">New DDA Deduction</label>
+          <div class="no_pad float-left cust-cal">
+            <input matInput [matDatepicker]="picker" placeholder="DD/MM/YYYY" [(ngModel)]="startDate"
+              (click)="picker.open()">
+            <mat-datepicker-toggle class="icon-area" matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </div>
+        </div>
+
+        <div class="float-left no_pad col-12 mt-4">
+          <button type="button" class="btn custom-btn nxt-btn mr-3 back" (click)="close()">Cancel</button>
+          <button type="button" class="btn custom-btn nxt-btn success" (click)="nextSbt = true">Submit</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" *ngIf="nextSbt">
+        <p class="col-12 float-left txt-success"><b>Submission Successful:</b> You have successful submitted your
+          transaction</p>
+
+        <div class="col-12 no_pad enquireTransactionList cust-table float-left">
+          <table style="width:100%">
+            <thead>
+              <tr class="bg_th">
+                <th>Service Name</th>
+                <th>Transaction No.</th>
+                <th>Transaction Date</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <!-- | filter : peopleFilter  | filter : transType | filter : status | filter: retArray" -->
+                <td>person.transactionNo</td>
+                <td>person.date</td>
+                <td>person.transactionType</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="col-12 float-left no_pad p-txt font-16 mt-3">Your transaction is submitted for approval</p>
+        <p class="col-12 float-left no_pad p-txt font-16">Mean while you can check the status of your transaction
+          in your <span class="link" tabindex="0" role="link"> Dashboard</span>
+
+        </p>
+        <hr class="col-12 float-left no_pad" />
+        <div class="float-left no_pad col-12">
+          <button type="button" class="btn custom-btn nxt-btn mr-3 back" (click)="nextSbt = false">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
