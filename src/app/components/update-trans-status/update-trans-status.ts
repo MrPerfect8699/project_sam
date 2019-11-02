@@ -1,6 +1,7 @@
 import { Component, ViewChild, OnInit, Inject, Injectable } from '@angular/core';
 import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 import * as moment from 'moment';
+import { element } from '@angular/core/src/render3';
 moment().format('DD/MM/YYYY');
 
 
@@ -69,8 +70,9 @@ export class UpdateTransStatusComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       if(result)
       {
+        // this.CoyyPple[transNo].push(status)
         this.CoyyPple.forEach(element => {
-          if(transNo == this.tranid){
+          if(element.transactionNo == this.tranid){
             debugger;
             element.status = result.statusOption;
             element.reason = result.reasonText;
