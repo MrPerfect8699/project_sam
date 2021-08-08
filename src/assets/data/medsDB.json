@@ -1,0 +1,31 @@
+{
+    "distributors": [
+        {
+            "name": "Dhanashree Meds pvt Ltd.",
+            "address": {
+                "street": "#49 Khade Bajar",
+                "city": "Belgaum",
+                "phone": "9844873333",
+                "GSTIN": "GSTIN0002837"
+            }
+        },
+        {
+            "name": "Dhanashree Meds pvt Ltd.",
+            "address": {
+                "street": "#49 Khade Bajar",
+                "city": "Belgaum",
+                "phone": "9844873333",
+                "GSTIN": "GSTIN0002837"
+            }
+        },
+        {
+            "name": "Dhanashree Meds pvt Ltd.",
+            "address": {
+                "street": "#49 Khade Bajar",
+                "city": "Belgaum",
+                "phone": "9844873333",
+                "GSTIN": "GSTIN0002837"
+            }
+        }
+    ]
+}
